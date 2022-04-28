@@ -12,10 +12,6 @@ class Team{
 
 }
 
-// let arr=["p1","p2","p3","p4","p5"];
-// for(let i:number=0;i<arr.length;i++){
-//     let arr: any[0]=new Player();
-// }
 
 
 let team=new Team()
@@ -49,22 +45,9 @@ let arr=[player1,player2,player3,player4,player5,player6,player7,player8,player9
 for(let i:number=0,j:number=1;i<arr.length;i++,j++)
 {
     let str:string="Player"
-    str=str+j;
+    str=str+" "+j;
     console.log(`${str} Score= ${arr[i].displayScore()}`);
     team.addScore(arr[i])
 }
-
-
-
-// console.log(`Player1 Score= ${player1.displayScore()}`);
-// console.log(`Player2 Score= ${player2.displayScore()}`);
-// console.log(`Player3 Score= ${player3.displayScore()}`);
-// console.log(`Player4 Score= ${player4.displayScore()}`);
-// console.log(`Player5 Score= ${player5.displayScore()}`);
-// team.addScore(player1)
-// team.addScore(player2)
-// team.addScore(player3)
-// team.addScore(player4)
-// team.addScore(player5)
 
 console.log(`Team Score= ${team.displayTeamScore()}`)

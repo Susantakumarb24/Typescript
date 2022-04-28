@@ -13,10 +13,6 @@ var Team = /** @class */ (function () {
     };
     return Team;
 }());
-// let arr=["p1","p2","p3","p4","p5"];
-// for(let i:number=0;i<arr.length;i++){
-//     let arr: any[0]=new Player();
-// }
 var team = new Team();
 var player1 = new Player_Class_1.Player();
 player1.hit();
@@ -45,18 +41,8 @@ player12.hit();
 var arr = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12];
 for (var i = 0, j = 1; i < arr.length; i++, j++) {
     var str = "Player";
-    str = str + j;
+    str = str + " " + j;
     console.log("".concat(str, " Score= ").concat(arr[i].displayScore()));
     team.addScore(arr[i]);
 }
-// console.log(`Player1 Score= ${player1.displayScore()}`);
-// console.log(`Player2 Score= ${player2.displayScore()}`);
-// console.log(`Player3 Score= ${player3.displayScore()}`);
-// console.log(`Player4 Score= ${player4.displayScore()}`);
-// console.log(`Player5 Score= ${player5.displayScore()}`);
-// team.addScore(player1)
-// team.addScore(player2)
-// team.addScore(player3)
-// team.addScore(player4)
-// team.addScore(player5)
 console.log("Team Score= ".concat(team.displayTeamScore()));
